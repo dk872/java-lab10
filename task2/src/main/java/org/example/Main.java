@@ -157,6 +157,7 @@ public class Main {
         FileManager.serializeObject(serializationFile, result);
         System.out.println(getMessage("success.serialized") + ": " + serializationFile.getAbsolutePath());
         LOGGER.info("Serialized result to: " + serializationFile.getAbsolutePath());
+        LOGGER.config("Completed searching for string with maximum number of words");
     }
 
     private static void doEncryptFile() throws Exception {
